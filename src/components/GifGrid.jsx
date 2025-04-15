@@ -1,14 +1,16 @@
 
 import { GifItem } from './GifItem';
 import { userFetchGifs } from '../hooks/userFetchGifs';
+import PropTypes from 'prop-types';
 
 
 export const GifGrid = ({ category }) => {
+
   // este es un hook personalizado, que contiene en 
   //su interior varios hooks de react
   const { images, isLoading } = userFetchGifs(category);
 
-  console.log(isLoading);
+  //console.log(isLoading);
 
   //{...image} es equivalente a enviar todas las propiedades de la imagen como props
 
@@ -38,5 +40,9 @@ export const GifGrid = ({ category }) => {
 
     </>
   )
+}
+
+GifGrid.propTypes = {
+  category: PropTypes.string.isRequired
 }
 

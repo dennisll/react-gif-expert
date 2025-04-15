@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test GifItem component should be match with snapshot 1`] = `
+<div>
+  <div
+    class="card"
+  >
+    <img
+      alt="title"
+      src="https://kinsta.com/es/wp-content/uploads/sites/8/2021/02/what-is-a-url-1024x512.jpeg"
+    />
+    <p>
+      title
+    </p>
+  </div>
+</div>
+`;
