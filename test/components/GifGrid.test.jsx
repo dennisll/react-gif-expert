@@ -40,7 +40,7 @@ describe('testing GifGrid', () => {
         userFetchGifs.mockReturnValue({
             images: gifs,
             isLoading: false
-        })
+        });
 
         render(<GifGrid category={category}/>);
 
